@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 body {
@@ -89,4 +90,11 @@ form {
 
 input {
   padding: 10px;
+}
+
+.submit {
+  background: 0;
+  border: 3px solid #000;
+  align-self: flex-end;
+  padding: 8px 20px;
 }
