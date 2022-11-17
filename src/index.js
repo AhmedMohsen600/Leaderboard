@@ -33,12 +33,6 @@ const displayData = async () => {
   });
 };
 
-const clearData = () => {
-  const user = document.querySelector('.user');
-  const score = document.querySelector('.score');
-  user.value = '';
-  score.value = '';
-};
 // listners
 document.addEventListener('DOMContentLoaded', displayData);
 
@@ -47,7 +41,7 @@ submitForm.addEventListener('submit', (e) => {
   const score = document.querySelector('.score').value;
   e.preventDefault();
   postData({ user, score });
-  clearData();
+  submitForm.reset();
 });
 
 refreshBtn.addEventListener('click', displayData);
